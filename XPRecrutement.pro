@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         src/Game.cpp \
+        src/TexturesManager.cpp \
         src/main.cpp
 
 DISTFILES += \
@@ -22,4 +23,5 @@ INCLUDEPATH += "/usr/include/SFML/"
 DEPENDPATH += "/usr/include/SFML/"
 
 HEADERS += \
-    src/Game.h
+    src/Game.h \
+    src/TexturesManager.h \

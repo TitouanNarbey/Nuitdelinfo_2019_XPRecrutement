@@ -24,16 +24,18 @@ protected:
 	void loadMap();
 
 	// player
-	const unsigned int DEFAULT_PLAYER_LOCATION_X = 7;
-	const unsigned int DEFAULT_PLAYER_LOCATION_Y = 7;
+	const unsigned int PLAYER_SPAWN_LOCATION_X = 7;
+	const unsigned int PLAYER_SPAWN_LOCATION_Y = 7;
+	const unsigned int WEAPON_DAMAGE_MELEE = 10;
+	const unsigned int WEAPON_DAMAGE_PISTOL = 15;
+	const unsigned int WEAPON_DAMAGE_BOMBE = 70;
+	const float PLAYER_SPEED = 0.25;
 	weapon m_playerWeapon = weapon::melee;
 	bool m_playerAlive = true;
+	sf::Sprite m_playerSprite;
 
 	sf::Time m_timeRemaining;
 
-	const unsigned int DEFAULT_WEAPON_DAMAGE_MELEE = 10;
-	const unsigned int DEFAULT_WEAPON_DAMAGE_PISTOL = 15;
-	const unsigned int DEFAULT_WEAPON_DAMAGE_BOMBE = 70;
 };
 
 #endif // GAME_H
