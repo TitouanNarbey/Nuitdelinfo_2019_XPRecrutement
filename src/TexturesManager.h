@@ -1,7 +1,7 @@
 #ifndef TEXTURESMANAGER_H
 #define TEXTURESMANAGER_H
 
-#define RELATIVE_PATH "../../"
+#define RELATIVE_PATH "../"
 
 
 // std
