@@ -24,18 +24,18 @@ sf::Texture TexturesManager::Planche;
 sf::Texture TexturesManager::Evier;
 void TexturesManager::loadTexture_ArticlesAll()
 {
-    if (!Tuile.loadFromFile(addRelativePath("Assets/Images/Tuile.png")))
+	/*if (!Tuile.loadFromFile(addRelativePath("Assets/Images/Tuile.png")))
     {
-	    Tuile << "Can't load texture 'Tuile' " << endl;
+		cout << "Can't load texture 'Tuile' " << endl;
     }
     if (!Planche.loadFromFile(addRelativePath("Assets/Images/Planche.png")))
     {
-	    Tuile << "Can't load texture 'Planche' " << endl;
+		cout << "Can't load texture 'Planche' " << endl;
     }
     if (!Evier.loadFromFile(addRelativePath("Assets/Images/Evier.png")))
     {
-	    Tuile << "Can't load texture 'Evier' " << endl;
-    }
+		cout << "Can't load texture 'Evier' " << endl;
+	}*/
 }
 
 
