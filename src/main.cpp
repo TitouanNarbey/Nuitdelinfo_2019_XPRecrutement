@@ -31,9 +31,6 @@ int main(/*int argc, char* argv[]*/)
 
 	while (window.isOpen())
 	{
-
-
-
 		//SFML::Event
 		Event event;
 		while (window.pollEvent(event))
