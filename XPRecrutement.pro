@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        src/Game.cpp \
         src/main.cpp
 
 DISTFILES += \
@@ -19,3 +20,6 @@ CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-netw
 CONFIG(debug, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 INCLUDEPATH += "/usr/include/SFML/"
 DEPENDPATH += "/usr/include/SFML/"
+
+HEADERS += \
+    src/Game.h
