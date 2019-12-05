@@ -6,7 +6,7 @@ using namespace sf;
 
 std::string addRelativePath(std::string path)
 {
-        std::string finalPath(RELATIVE_PATH);
+	std::string finalPath(RELATIVE_PATH);
 	finalPath += path;
 	return finalPath;
 }
