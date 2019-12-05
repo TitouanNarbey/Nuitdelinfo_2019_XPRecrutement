@@ -15,7 +15,8 @@
 //#include <SFML/Audio.hpp>
 
 // src
-
+#include "TexturesManager.h"
+#include "Game.h"
 
 using namespace std;
 using namespace sf;
@@ -27,8 +28,15 @@ int main(/*int argc, char* argv[]*/)
 	RenderWindow window(vm, "XP Recrutement", Style::Default);
 	window.setFramerateLimit(60);
 
-	Clock clock;
+	// load textures
+	TexturesManager::loadAll();
 
+	//Game game;
+	sf::Sprite coucou;
+	coucou.setTexture(TexturesManager::Tuile);
+
+
+	Clock clock;
 	while (window.isOpen())
 	{
 		//SFML::Event
@@ -60,6 +68,8 @@ int main(/*int argc, char* argv[]*/)
 
 
 		window.clear();
+
+		window.draw(coucou);
 
 		window.display();
 	}

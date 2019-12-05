@@ -4,7 +4,7 @@ using namespace std;
 using namespace sf;
 
 
-std::string addRelativePath(std::string path)
+std::string TexturesManager::addRelativePath(std::string path)
 {
 	std::string finalPath(RELATIVE_PATH);
 	finalPath += path;
@@ -20,15 +20,15 @@ void TexturesManager::loadAll()
 
 // Articles
 sf::Texture TexturesManager::Tuile;
-sf::Texture TexturesManager::Planche;
-sf::Texture TexturesManager::Evier;
+//sf::Texture TexturesManager::Planche;
+//sf::Texture TexturesManager::Evier;
 void TexturesManager::loadTexture_ArticlesAll()
 {
-	/*if (!Tuile.loadFromFile(addRelativePath("Assets/Images/Tuile.png")))
+	if (!Tuile.loadFromFile(addRelativePath("assets/images/tuile.png")))
     {
 		cout << "Can't load texture 'Tuile' " << endl;
     }
-    if (!Planche.loadFromFile(addRelativePath("Assets/Images/Planche.png")))
+	/*if (!Planche.loadFromFile(addRelativePath("Assets/Images/Planche.png")))
     {
 		cout << "Can't load texture 'Planche' " << endl;
     }

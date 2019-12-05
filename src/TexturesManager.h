@@ -1,7 +1,7 @@
 #ifndef TEXTURESMANAGER_H
 #define TEXTURESMANAGER_H
 
-#define RELATIVE_PATH "../"
+#define RELATIVE_PATH "../../"
 
 
 // std
@@ -21,8 +21,8 @@ public:
     // Articles
     static void loadTexture_ArticlesAll();
     static sf::Texture Tuile;
-    static sf::Texture Planche;
-    static sf::Texture Evier;
+	//static sf::Texture Planche;
+	//static sf::Texture Evier;
 };
 
 #endif // TEXTURESMANAGER_H
