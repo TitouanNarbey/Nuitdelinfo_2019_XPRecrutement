@@ -7,6 +7,9 @@
 // SFML
 #include <SFML/Graphics.hpp>
 
+// src
+#include "Article.h"
+
 class Game
 {
 public:
@@ -18,9 +21,7 @@ public:
 
 protected:
 	// map
-	const unsigned int MAP_X = 15;
-	const unsigned int MAP_Y = 15;
-	std::vector<std::vector<int/*Article*/>> m_map;
+    std::vector<std::vector<Article>> m_map;
 	void loadMap();
 
 	// player
