@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         src/Article.cpp \
+        src/Game.cpp \
         src/main.cpp
 
 DISTFILES += \
@@ -22,4 +23,5 @@ INCLUDEPATH = D:/Qt/SFML-2.5.1/include
 #DEPENDPATH += "/usr/include/SFML/"
 
 HEADERS += \
-    src/Article.h
+    src/Article.h \
+    src/Game.h
