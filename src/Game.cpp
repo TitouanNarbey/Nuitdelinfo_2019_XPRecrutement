@@ -7,6 +7,7 @@ Game::Game()
     m_background.setTexture(TexturesManager::Background);
 
 	m_playerSprite.setTexture(TexturesManager::Player);
+    m_playerSprite.setScale(3, 3);
 	m_playerSprite.setOrigin(32, 32);
 	m_playerSprite.setPosition(PLAYER_SPAWN_LOCATION_X * 64, PLAYER_SPAWN_LOCATION_Y * 64);
 
@@ -51,6 +52,8 @@ void Game::draw(sf::RenderWindow& window)
 			window.draw(m_map.at(y).at(x));
 		}
 	}
+
+    window.draw(m_playerSprite);
 }
 
 void Game::loadMap()
