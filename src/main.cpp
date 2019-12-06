@@ -36,6 +36,8 @@ int main(/*int argc, char* argv[]*/)
 	Clock clock;
 	while (window.isOpen())
 	{
+		game.run(clock.getElapsedTime());
+
 		//SFML::Event
 		Event event;
 		while (window.pollEvent(event))
