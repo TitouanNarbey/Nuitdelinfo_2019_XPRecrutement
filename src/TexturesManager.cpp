@@ -12,13 +12,18 @@ std::string TexturesManager::addRelativePath(std::string path)
 }
 
 sf::Texture TexturesManager::Background;
+sf::Texture TexturesManager::Player;
 void TexturesManager::loadAll()
 {
-    loadTexture_ArticlesAll();
-    if (!Background.loadFromFile(addRelativePath("assets/images/background.png")))
-    {
-        cout << "Can't load texture 'Background' " << endl;
-    }
+	loadTexture_ArticlesAll();
+	if (!Background.loadFromFile(addRelativePath("assets/images/background.png")))
+	{
+		cout << "Can't load texture 'Background' " << endl;
+	}
+	if (!Player.loadFromFile(addRelativePath("assets/images/player_back.png")))
+	{
+		cout << "Can't load texture 'Player' " << endl;
+	}
 }
 
 
