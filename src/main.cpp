@@ -25,7 +25,7 @@ int main(/*int argc, char* argv[]*/)
 {
 	// WINDOW
 	VideoMode vm(1920, 1080);
-	RenderWindow window(vm, "XP Recrutement", Style::Default);
+	RenderWindow window(vm, "XP Recrutement", Style::Fullscreen);
 	window.setFramerateLimit(60);
 
 	// load textures
