@@ -5,6 +5,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "TexturesManager.h"
+
 class Article : public sf::Sprite
 {
 public:

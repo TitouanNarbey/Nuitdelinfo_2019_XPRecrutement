@@ -12,6 +12,7 @@ Tuile::Tuile() : Article()
     m_ealth = 10;
     m_solid = true;
     m_pickable = true;
+    this->setTexture(TexturesManager::Tuile);
 }
 
 Planche::Planche() : Article()
@@ -21,6 +22,7 @@ Planche::Planche() : Article()
     m_ealth = 20;
     m_solid = true;
     m_pickable = true;
+    this->setTexture(TexturesManager::Planche);
 }
 
 Evier::Evier() : Article()
@@ -183,4 +185,5 @@ Air::Air() : Article()
     m_ealth = -1;
     m_solid = false;
     m_pickable = false;
+    this->setTexture(TexturesManager::Air);
 }
