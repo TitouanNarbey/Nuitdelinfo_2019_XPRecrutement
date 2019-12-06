@@ -5,6 +5,8 @@ using namespace std;
 Game::Game()
 {
     m_background.setTexture(TexturesManager::Background);
+
+	this->loadMap();
 }
 
 void Game::run(sf::Time time)
@@ -37,6 +39,14 @@ void Game::draw(sf::RenderWindow& window)
 	/*
 	 * for for draw
 	 */
+	for(size_t y=0; y < m_map.size(); y++)
+	{
+		for(size_t x=0; x < m_map.at(y).size(); x++)
+		{
+			m_map.at(y).at(x).setPosition(x * 64, y * 64);
+			window.draw(m_map.at(y).at(x));
+		}
+	}
 }
 
 void Game::loadMap()
@@ -52,9 +62,9 @@ void Game::loadMap()
 
     //First line
     m_map.push_back(vector<Article>());
+	m_map.back().push_back(Tuile());
     m_map.back().push_back(Air());
-    m_map.back().push_back(Air());
-    m_map.back().push_back(Air());
+	m_map.back().push_back(Planche());
     m_map.back().push_back(Air());
     m_map.back().push_back(Air());
     m_map.back().push_back(Air());
