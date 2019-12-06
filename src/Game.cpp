@@ -29,6 +29,16 @@ void Game::run(sf::Time time)
 	}
 }
 
+
+void Game::draw(sf::RenderWindow& window)
+{
+	window.draw(m_background);
+
+	/*
+	 * for for draw
+	 */
+}
+
 void Game::loadMap()
 {
 	// clear map

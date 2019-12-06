@@ -66,7 +66,7 @@ int main(/*int argc, char* argv[]*/)
 
 		window.clear();
 
-		window.draw(coucou);
+		game.draw(window);
 
 		window.display();
 	}

@@ -20,6 +20,8 @@ public:
 
 	void run(sf::Time time);
 
+	void draw(sf::RenderWindow& window);
+
 protected:
 	// map
     std::vector<std::vector<Article>> m_map;
