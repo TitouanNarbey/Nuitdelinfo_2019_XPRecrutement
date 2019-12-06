@@ -31,10 +31,7 @@ int main(/*int argc, char* argv[]*/)
 	// load textures
 	TexturesManager::loadAll();
 
-	//Game game;
-	sf::Sprite coucou;
-	coucou.setTexture(TexturesManager::Tuile);
-
+    Game game;
 
 	Clock clock;
 	while (window.isOpen())

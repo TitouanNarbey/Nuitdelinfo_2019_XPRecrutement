@@ -132,10 +132,10 @@ public:
     Petard();
 };
 
-class Sol : public Article
+class Air : public Article
 {
 public:
-    Sol();
+    Air();
 };
 
 

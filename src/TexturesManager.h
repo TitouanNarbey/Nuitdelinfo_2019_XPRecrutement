@@ -21,8 +21,9 @@ public:
     // Articles
     static void loadTexture_ArticlesAll();
     static sf::Texture Tuile;
-	//static sf::Texture Planche;
-	//static sf::Texture Evier;
+    static sf::Texture Planche;
+    static sf::Texture Air;
+    static sf::Texture Background;
 };
 
 #endif // TEXTURESMANAGER_H

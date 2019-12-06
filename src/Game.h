@@ -9,6 +9,7 @@
 
 // src
 #include "Article.h"
+#include "TexturesManager.h"
 
 class Game
 {
@@ -37,6 +38,7 @@ protected:
 
 	sf::Time m_timeRemaining;
 
+    sf::Sprite m_background;
 };
 
 #endif // GAME_H

@@ -4,7 +4,7 @@ using namespace std;
 
 Game::Game()
 {
-
+    m_background.setTexture(TexturesManager::Background);
 }
 
 void Game::run(sf::Time time)
@@ -42,131 +42,131 @@ void Game::loadMap()
 
     //First line
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Second line
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Third line
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Fourth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Fifth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Sixth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Seventh
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Eighth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Ninth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 
     //Tenth
     m_map.push_back(vector<Article>());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
-    m_map.back().push_back(Sol());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
+    m_map.back().push_back(Air());
 }

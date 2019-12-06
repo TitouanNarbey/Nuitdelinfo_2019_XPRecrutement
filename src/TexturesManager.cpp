@@ -11,31 +11,35 @@ std::string TexturesManager::addRelativePath(std::string path)
 	return finalPath;
 }
 
-
+sf::Texture TexturesManager::Background;
 void TexturesManager::loadAll()
 {
     loadTexture_ArticlesAll();
+    if (!Background.loadFromFile(addRelativePath("assets/images/background.png")))
+    {
+        cout << "Can't load texture 'Background' " << endl;
+    }
 }
 
 
 // Articles
 sf::Texture TexturesManager::Tuile;
-//sf::Texture TexturesManager::Planche;
-//sf::Texture TexturesManager::Evier;
+sf::Texture TexturesManager::Planche;
+sf::Texture TexturesManager::Air;
 void TexturesManager::loadTexture_ArticlesAll()
 {
-	if (!Tuile.loadFromFile(addRelativePath("assets/images/tuile.png")))
+    if (!Tuile.loadFromFile(addRelativePath("assets/images/tuile.png")))
     {
 		cout << "Can't load texture 'Tuile' " << endl;
     }
-	/*if (!Planche.loadFromFile(addRelativePath("Assets/Images/Planche.png")))
+    if (!Planche.loadFromFile(addRelativePath("assets/images/planche.png")))
     {
 		cout << "Can't load texture 'Planche' " << endl;
     }
-    if (!Evier.loadFromFile(addRelativePath("Assets/Images/Evier.png")))
+    if (!Air.loadFromFile(addRelativePath("assets/images/air.png")))
     {
-		cout << "Can't load texture 'Evier' " << endl;
-	}*/
+        cout << "Can't load texture 'Air' " << endl;
+    }
 }
 
 

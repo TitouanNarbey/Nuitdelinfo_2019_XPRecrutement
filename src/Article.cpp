@@ -176,10 +176,10 @@ Petard::Petard() : Article()
     m_pickable = true;
 }
 
-Sol::Sol() : Article()
+Air::Air() : Article()
 {
     m_price = 0.f;
-    m_ref = "sol";
+    m_ref = "air";
     m_ealth = -1;
     m_solid = false;
     m_pickable = false;
